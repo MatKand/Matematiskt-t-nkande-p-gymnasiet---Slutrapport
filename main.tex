@@ -1,0 +1,161 @@
+\documentclass[11 pt,a4paper]{article}
+\pdfoutput=1
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[swedish]{babel}
+\usepackage{amsmath} 
+\usepackage{lmodern}
+\usepackage{units}
+\usepackage{icomma}
+\usepackage{tikz}
+\usepackage{pgf-pie}
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx,caption}
+\usepackage{hyperref}
+\usepackage{filecontents}
+\usepackage{subcaption}
+\usepackage{bbm}
+\usepackage{todonotes}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+%\usepackage[top=1.4in, bottom=1.3in, left=1.5in, right=1.5in]{geometry}
+\usepackage{pgfgantt}
+\usepackage{float}
+
+
+\definecolor{lila}{RGB}{128,0,128} %Ida
+%Mahogany - Mattias
+%Cyan - Björn
+%WildStrawberry - Axel
+\definecolor{green}{RGB}{25,150,50} %Påja
+
+\begin{document}
+
+\includepdf{Figures/Framsida.pdf}
+%Förslag på ny titel
+% Titel: Problemlösningsuppgifter för gymnasiet
+%Undertitel: med fokus på verklighetsanknytning, modellering, programmering och diskussion
+% 
+
+\pagenumbering{gobble}
+
+\newpage
+
+\renewcommand\abstractname{Sammandrag}\begin{abstract}
+\input{Sections/Sammandrag.tex}
+\end{abstract}
+
+\newpage
+
+\renewcommand\abstractname{Abstract}
+\begin{abstract} 
+\input{Sections/Abstract.tex}
+\end{abstract}
+
+\newpage
+ 
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+
+%\section*{Mall med idéer, fyll gärna på mer}
+%    \input{Mall.tex}
+
+% \section{Bakgrund}
+%     \label{sec:Bakgrund}
+%     \input{Sections/Bakgrund/Bakgrund.tex}
+    
+    \section{Matematikundervisning nu och då}
+        \input{Sections/Bakgrund/Matematik.tex}
+        
+    \subsection{Traditionell matematikundervisning}
+        \input{Sections/Bakgrund/Traditionell_Matematik.tex}
+    
+    \subsection{Förändringar i matematikundervisningen}
+        \input{Sections/Bakgrund/Forandringar.tex}
+        \label{sec:Forandringar}
+        
+    \subsection{Verklighetsanknytning i matematiken}
+        \input{Sections/Bakgrund/Verklighetsanknytning.tex}
+        
+    \subsection{Matematikundervisningen idag}
+        \input{Sections/Bakgrund/Matematiken_Idag.tex}
+        
+    \subsection{Gruppindelning}
+        \label{sec:Gruppindelning}
+        \input{Sections/Bakgrund/Gruppindelning.tex}
+        
+\section{Första enkäten}
+    \input{Sections/Bakgrund/Bakgrundenkat.tex}
+    %\newline \newline \input{Sections/Bakgrund/Piecharts.tex}
+    
+\section{Teori}
+    \label{sec:Teori}
+    \input{Sections/Teori/Teori.tex}
+    
+    \subsection{Vad är ett problem?}
+        \input{Sections/Teori/Problem.tex}
+        
+    \subsection{Diskussioner och kommunikation inom matematik}
+        \input{Sections/Teori/Kommunikation.tex}
+        
+    \subsection{Arbeta i grupp}
+        \input{Sections/Teori/Grupparbete.tex}
+        
+    \subsection{Programmering och matematik}
+        \input{Sections/Teori/Programmering.tex}
+        
+    \subsection{Info om React?}
+        
+\section{Syfte}
+    \subsection{''Mattedelen''}
+    (Skriva om syftet med problemen, även varför vi riktar oss mot just gymnasiet.)
+    \subsection{Hemsidans utvecklingsmiljö}
+        \input{Sections/Syfte/Hemsida.tex}
+
+\section{Metod}
+
+    \subsection{Skapandet av problemen}
+        \input{Sections/Metod/Problem.tex}
+    
+    \subsection{Test av problemen}
+
+    \subsection{Hemsidan och latexponering}
+        \input{Sections/Metod/Hemsidan.tex}
+    
+\section{Resultat}
+
+    \subsection{De problem som vi skapat}
+    
+    \subsection{Hemsidan}
+        \input{Sections/Resultat/Hemsidan.tex}
+
+\section{Utfall}
+    \label{sec:Utfall}
+    \input{Sections/Utfall/Utfall.tex}
+
+\section{Diskussion}
+
+    \subsection{Hur vi kan påverka}
+        \input{Sections/Diskussion/Paverkan.tex}
+    
+    \subsection{Vad är ett bra problem?}
+        \input{Sections/Diskussion/BraProblem.tex}
+        
+    \subsection{Problemlösning}
+        \input{Sections/Diskussion/Problemlosning.tex}
+    
+    \subsection{Hemsida}
+        \input{Sections/Diskussion/Hemsida.tex}
+
+\section{Slutsats}
+
+\newpage
+\begin{thebibliography}{3}
+    \input{Kallor.tex}
+\end{thebibliography}
+\end{document}
