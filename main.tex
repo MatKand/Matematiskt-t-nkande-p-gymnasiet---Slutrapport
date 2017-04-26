@@ -27,18 +27,14 @@
 
 
 \definecolor{lila}{RGB}{128,0,128} %Ida
-%Mahogany - Mattias
-%Cyan - Björn
-%WildStrawberry - Axel
+\definecolor{Mahogany}{RGB}{192, 64, 0} %- Mattias
+\definecolor{turkos}{RGB}{0, 163, 215} % - Björn
+\definecolor{WildStrawberry}{RGB}{255,67,164} % - Axel
 \definecolor{green}{RGB}{25,150,50} %Påja
 
 \begin{document}
 
 \includepdf{Figures/Framsida.pdf}
-%Förslag på ny titel
-% Titel: Problemlösningsuppgifter för gymnasiet
-%Undertitel: med fokus på verklighetsanknytning, modellering, programmering och diskussion
-% 
 
 \pagenumbering{gobble}
 
@@ -80,6 +76,7 @@
         \label{sec:Forandringar}
         
     \subsection{Verklighetsanknytning i matematiken}
+    \label{sec:Verklighetsanknytning}
         \input{Sections/Bakgrund/Verklighetsanknytning.tex}
         
     \subsection{Matematikundervisningen idag}
@@ -92,7 +89,10 @@
 \section{Första enkäten}
     \input{Sections/Bakgrund/Bakgrundenkat.tex}
     %\newline \newline \input{Sections/Bakgrund/Piecharts.tex}
-    
+
+\section{Intervju med Niklas Grip}
+    \input{Intervjun.tex}
+
 \section{Teori}
     \label{sec:Teori}
     \input{Sections/Teori/Teori.tex}
@@ -107,26 +107,31 @@
         \input{Sections/Teori/Grupparbete.tex}
         
     \subsection{Programmering och matematik}
+        \label{sec:ProgrammeringOchMatematik}
         \input{Sections/Teori/Programmering.tex}
         
     \subsection{Info om React?}
         
 \section{Syfte}
     \subsection{''Mattedelen''}
+        \input{Sections/Syfte/Mattedelen.tex}
     (Skriva om syftet med problemen, även varför vi riktar oss mot just gymnasiet.)
-    \subsection{Hemsidans utvecklingsmiljö}
+    
+    \subsection{Varför hemsida?}
         \input{Sections/Syfte/Hemsida.tex}
 
 \section{Metod}
 
     \subsection{Skapandet av problemen}
+    \label{sec:Skapandetavproblem}
         \input{Sections/Metod/Problem.tex}
-    
+        
     \subsection{Test av problemen}
+        \input{Sections/Metod/Test.tex}
 
     \subsection{Hemsidan och latexponering}
         \input{Sections/Metod/Hemsidan.tex}
-    
+       
 \section{Resultat}
 
     \subsection{De problem som vi skapat}
@@ -148,6 +153,9 @@
         
     \subsection{Problemlösning}
         \input{Sections/Diskussion/Problemlosning.tex}
+        
+    \subsection{Alternativa sätt att testa problem}
+        \input{Sections/Diskussion/AndraSattAttTesta.tex}
     
     \subsection{Hemsida}
         \input{Sections/Diskussion/Hemsida.tex}
