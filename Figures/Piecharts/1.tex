@@ -1,0 +1,71 @@
+% För pie charts, varje färg motsvarar andel lektionstid
+\definecolor{PC1}{RGB}{216, 131, 183} % 0
+\definecolor{PC2}{RGB}{121, 119, 184} % 1-10
+\definecolor{PC3}{RGB}{198, 220, 103} % 11-20
+\definecolor{PC4}{RGB}{0, 113, 188} % 21-30
+\definecolor{PC5}{RGB}{242, 96, 53} % 31-40
+\definecolor{PC6}{RGB}{164, 83, 138} % 41-50
+\definecolor{PC7}{RGB}{251, 185, 130} % 51-60
+\definecolor{PC8}{RGB}{247, 146, 29} % 61-70
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \pie [color={PC2,PC3,PC4,PC5,PC7},radius = 2.2]
+            {4.3/ , 23.4/ , 55.3/ , 14.9/ , 2.1/ }
+        \end{tikzpicture}
+        \caption{Genomgång med hela klassen}
+        \label{PC:Genomgang}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \pie [color={PC2,PC3,PC4,PC5,PC6,PC7,PC8},radius = 2.2]
+            {2.1/ , 10.6/ , 23.4/ , 29.8/ , 21.3/ , 4.3/ , 8.5/ }
+        \end{tikzpicture}
+        \caption{Egen räkning i boken}
+        \label{PC:Rakning}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \pie [color={PC1,PC2,PC3,PC4,PC5},radius = 2.2]
+            {4.3/ , 29.8/ , 21.3/ , 36.2/ , 8.5/ }
+        \end{tikzpicture}
+        \caption{Diskussion och samarbete}
+        \label{PC:Diskussion}
+    \end{subfigure}
+    \\
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+       \begin{tikzpicture}
+            \pie [color={PC1,PC2,PC3},radius = 2.2]
+            {6.4/ , 53.2/ , 40.4/ }
+        \end{tikzpicture}
+        \caption{Uppföljning/Reflektion med hela klassen}
+        \label{PC:Uppföljning}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+        \begin{tikzpicture}
+            \pie [color={PC1,PC2,PC3},radius = 2.2, rotate = 275]
+            {83.0/ , 10.6/ , 6.4/ }
+        \end{tikzpicture}
+        \caption{Övrigt (specificeras i texten)}
+        \label{PC:Ovrigt}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.2\textwidth}
+        \centering
+        
+        \caption{Färgförklaring}
+        \label{fig:five over x}
+    \end{subfigure}
+    \caption{I figur (a)-(e) visas cirkeldiagram som visar hur stor andel av lektionstiden som olika lärare anger att de lägger på olika delar av undervisningen. Figur (f) visar det intervall (i procent) som varje färg representerar.}
+    \label{fig:three graphs}
+\end{figure}
