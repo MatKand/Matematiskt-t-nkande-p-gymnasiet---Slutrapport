@@ -11,7 +11,6 @@
 \usepackage{tikz}
 \usepackage{pgf-pie}
 \usepackage{color}
-%\usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx,caption}
 \usepackage{hyperref}
 \usepackage{filecontents}
@@ -28,11 +27,11 @@
 \usepackage{caption}
 \usepackage{subcaption}
 
-\definecolor{lila}{RGB}{128,0,128} %Ida
-\definecolor{Mahogany}{RGB}{192, 64, 0} %- Mattias
+\definecolor{lila}{RGB}{128,0,128} % - Ida
+\definecolor{Mahogany}{RGB}{192, 64, 0} % - Mattias
 \definecolor{turkos}{RGB}{0, 163, 215} % - Björn
 \definecolor{WildStrawberry}{RGB}{255,67,164} % - Axel
-\definecolor{green}{RGB}{25,150,50} %Påja
+\definecolor{green}{RGB}{25,150,50} % - Påja
 
 \begin{document}
 
@@ -40,6 +39,24 @@
 
 \pagenumbering{gobble}
 
+\newpage
+
+\begin{centering}
+\Huge
+''Tell me and I forget 
+
+Teach me and I remember
+
+Involve me and I learn''
+
+\end{centering}
+\bigskip
+\begin{centering}
+
+\Large
+- Benjamin Franklin
+
+\end{centering}
 \newpage
 
 \renewcommand\abstractname{Sammandrag}\begin{abstract}
@@ -65,8 +82,9 @@
 
 \section{Matematikundervisning nu och då}
     \input{Sections/Bakgrund/Matematik.tex}
-        
+    
     \subsection{Traditionell matematikundervisning}
+        \label{sec:Traditionellt}
         \input{Sections/Bakgrund/Traditionell_Matematik.tex}
     
     \subsection{Förändringar i matematikundervisningen}
@@ -87,81 +105,98 @@
 \section{Syfte}
     \input{Sections/Syfte/Mattedelen.tex}
     
+    \subsection{Problembank}
+        \input{Sections/Syfte/Problembank.tex}
+    
+    \subsection{Programmering och matematik}
+        \label{sec:ProgrammeringOchMatematik}
+        \input{Sections/Syfte/Programmering.tex}
+    
     \subsection{Hemsidans roll}
         \input{Sections/Syfte/Hemsida.tex}
 
-\section{Teori}
+\section{Varför är problemlösning viktigt?}
     \label{sec:Teori}
+    \input{Sections/Teori/Intro.tex}
+    
     \input{Sections/Teori/Teori.tex}
     
     \subsection{Vad är ett problem?}
+        \label{sec:problemdef}
         \input{Sections/Teori/Problem.tex}
         
-    \subsection{Varför problemlösning och vem är det bra för?}
-        \input{Sections/Teori/Varforproblemlosning.tex}
+    \subsection{Problembaserat lärande}
+        \input{Sections/Teori/ProblemForst.tex}
+        
+    \subsection{Arbeta i grupp}
+        \input{Sections/Teori/Grupparbete.tex}
         
     \subsection{Diskussion och kommunikation inom matematik}
         \input{Sections/Teori/Kommunikation.tex}
         
-    \subsection{Problembaserat lärande}
-    \input{Sections/Teori/ProblemForst.tex}
+    \subsection{Göra eleverna delaktiga i undervisningen}
+        \input{Sections/Teori/Delaktighet.tex}
+        \label{sec:delaktighet}
+        
+    \subsection{Vem är problemlösning bra för?}
+        \input{Sections/Teori/VemArDetBraFor.tex}
     
-    \subsection{Arbeta i grupp}
-        \input{Sections/Teori/Grupparbete.tex}
-        
-    \subsection{Programmering och matematik}
-        \label{sec:ProgrammeringOchMatematik}
-        \input{Sections/Teori/Programmering.tex}
-        
-    \subsection{Info om React?}
-
-\section{Metod}
-    \subsection{Första enkäten}
-    \input{Sections/Bakgrund/Bakgrundenkat.tex}
+\section{Undersökning av hur matematikundervisngen ser ut idag}
+    %\subsection{Enkät till matematiklärare om deras undervisning}
+    %Lite text
+    %Subsection: Enkät till matematiklärare om deras undervisning
+    \input{Sections/Bakgrundsinfo/Bakgrundenkat.tex}
     
     \subsection{Intervju med Niklas Grip}
-    \input{Intervjun.tex}
+    \input{Sections/Bakgrundsinfo/Intervjun.tex}
     
-    \subsection{Skapandet av problemen}
+\section{Skapande av problembank med tillhörande problem}
+    \subsection{Konstruktion av matematiska problem}
     \label{sec:Skapandetavproblem}
         \input{Sections/Metod/Problem.tex}
-        
-    \subsection{Test av problemen}
-        \input{Sections/Metod/Test.tex}
 
     \subsection{Hemsidan}
         \input{Sections/Metod/Hemsidan.tex}
-       
-\section{Resultat}
-
+        
+\section{Den färdiga problembanken}
+    %"Resultat": Hemsidan och alla problemen
+        \input{Sections/Resultat/Problembank.tex}
+    
     \subsection{De problem som vi skapat}
+        \input{Sections/Resultat/Problem.tex}
     
     \subsection{Hemsidan}
         \input{Sections/Resultat/Hemsidan.tex}
-
-\section{Utfall}
-    \label{sec:Utfall}
-    \input{Sections/Utfall/Utfall.tex}
+        
+    
+\section{Test av problemen}
+    
+    \subsection{''Metod''}
+        \input{Sections/Metod/Test.tex}
+        
+    \subsection{''Resultat''}
+    \label{sec:slutenkat}
 
 \section{Diskussion}
-
-    \subsection{Hur vi kan påverka}
-        \input{Sections/Diskussion/Paverkan.tex}
-    
-    \subsection{Processen att ta fram problem}
-        \input{Sections/Diskussion/ProcessenAttTaFramProblem.tex}
+    \input{Sections/Diskussion/Diskussion.tex}
     
     \subsection{Vad är ett bra problem?}
         \input{Sections/Diskussion/BraProblem.tex}
         
-    \subsection{Begreppet problemlösning}
-        \input{Sections/Diskussion/Problemlosning.tex}
+    %\subsection{Begreppet problemlösning}
+    %    \input{Sections/Diskussion/Problemlosning.tex}
+    
+    \subsection{Processen av att ta fram problem samt dess begränsningar}
+        \input{Sections/Diskussion/ProcessenAttTaFramProblem.tex}
         
     \subsection{Alternativa sätt att testa problem}
         \input{Sections/Diskussion/AndraSattAttTesta.tex}
-    
+        
     \subsection{Hemsida}
         \input{Sections/Diskussion/Hemsida.tex}
+        
+    \subsection{Hur vi kan påverka}
+        \input{Sections/Diskussion/Paverkan.tex}
 
 \section{Slutsats}
 
