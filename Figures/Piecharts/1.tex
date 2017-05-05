@@ -8,8 +8,6 @@
 \definecolor{PC7}{RGB}{251, 185, 130} % 51-60
 \definecolor{PC8}{RGB}{247, 146, 29} % 61-70
 
-\usepackage{enumitem,xcolor}
-
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.2\textwidth}
@@ -42,6 +40,7 @@
         \label{PC:Diskussion}
     \end{subfigure}
     \\
+    \bigskip
     \begin{subfigure}[b]{0.2\textwidth}
         \centering
        \begin{tikzpicture}
@@ -62,9 +61,10 @@
         \label{PC:Ovrigt}
     \end{subfigure}
     \hfill
-    \begin{subfigure}[b]{0.2\textwidth}
-        \centering
-        \begin{itemize}
+    \begin{subfigure}[b]{0.2\textwidth}        
+         \centering
+         %\begin{multicols}{2}
+         \begin{itemize}
             \setlength\itemsep{0.01em}
             \item[\textcolor{PC1}{\textbullet}] 0\%
             \item[\textcolor{PC2}{\textbullet}] 1-10\%
@@ -74,24 +74,11 @@
             \item[\textcolor{PC6}{\textbullet}] 41-50\%
             \item[\textcolor{PC7}{\textbullet}] 51-60\%
             \item[\textcolor{PC8}{\textbullet}] 61-70\%
-        \end{itemize}
-        %\begin{tabular}{ |c| }
-        %  \hline
-        %  \multicolumn{1}{|c|}{Andel tid} \\
-        %  \hline
-        %  \textcolor{PC1}{0\%} \\
-        %  \textcolor{PC2}{1-10\%} \\
-        %  \textcolor{PC3}{11-20\%} \\
-        %  \textcolor{PC4}{21-30\%} \\
-        %  \textcolor{PC5}{31-40\%} \\
-        %  \textcolor{PC6}{41-50\%} \\
-        %  \textcolor{PC7}{51-60\%} \\
-        %  \textcolor{PC8}{61-70\%} \\
-        %  \hline
-        %\end{tabular}
+         \end{itemize}
+         %\end{multicols}
         \caption{Färgförklaring (Andel tid)}
         \label{fig:five over x}
     \end{subfigure}
-    \caption*{I figur (a)-(e) visas cirkeldiagram som visar hur stor andel av lektionstiden som olika lärare anger att de lägger på olika delar av undervisningen. Figur (f) visar det intervall (i procent) som varje färg representerar.}
-    \label{fig:three graphs}
+    \caption{I figur (a)-(e) visas cirkeldiagram som visar hur stor andel av lektionstiden som olika lärare anger att de lägger på olika delar av undervisningen. Figur (f) visar det intervall (i procent) som varje färg representerar.}
+    \label{fig:PC}
 \end{figure}

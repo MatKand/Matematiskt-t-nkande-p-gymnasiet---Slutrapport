@@ -26,6 +26,9 @@
 \usepackage{csquotes}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{enumitem,xcolor}
+\usepackage{pdfpages} 
+\usepackage{soul}
 
 \definecolor{lila}{RGB}{128,0,128} % - Ida
 \definecolor{Mahogany}{RGB}{192, 64, 0} % - Mattias
@@ -108,22 +111,20 @@ Involve me and I learn''
     \subsection{Problembank}
         \input{Sections/Syfte/Problembank.tex}
     
-    \subsection{Programmering och matematik}
-        \label{sec:ProgrammeringOchMatematik}
-        \input{Sections/Syfte/Programmering.tex}
-    
     \subsection{Hemsidans roll}
         \input{Sections/Syfte/Hemsida.tex}
-
+% saker att skriva om: definiera ett problem bättre, matematisk modellering, öppna problem, undersökande arbetssätt
 \section{Varför är problemlösning viktigt?}
     \label{sec:Teori}
     \input{Sections/Teori/Intro.tex}
-    
-    \input{Sections/Teori/Teori.tex}
-    
-    \subsection{Vad är ett problem?}
+        
+    \subsection{Vad är problemlösning?}
         \label{sec:problemdef}
         \input{Sections/Teori/Problem.tex}
+        
+    \subsection{Polya's fyra steg}
+        \label{sec:polya}
+        \input{Sections/Teori/Polya.tex}
         
     \subsection{Problembaserat lärande}
         \input{Sections/Teori/ProblemForst.tex}
@@ -133,10 +134,15 @@ Involve me and I learn''
         
     \subsection{Diskussion och kommunikation inom matematik}
         \input{Sections/Teori/Kommunikation.tex}
+        \label{sec:Diskussion}
         
     \subsection{Göra eleverna delaktiga i undervisningen}
         \input{Sections/Teori/Delaktighet.tex}
         \label{sec:delaktighet}
+        
+    \subsection{Programmering: Applicerad problemlösning}
+        \label{sec:ProgrammeringOchMatematik}
+        \input{Sections/Syfte/Programmering.tex}
         
     \subsection{Vem är problemlösning bra för?}
         \input{Sections/Teori/VemArDetBraFor.tex}
@@ -155,7 +161,7 @@ Involve me and I learn''
     \label{sec:Skapandetavproblem}
         \input{Sections/Metod/Problem.tex}
 
-    \subsection{Hemsidan}
+    \subsection{Utvecklingen av hemsidan}
         \input{Sections/Metod/Hemsidan.tex}
         
 \section{Den färdiga problembanken}
@@ -165,27 +171,23 @@ Involve me and I learn''
     \subsection{De problem som vi skapat}
         \input{Sections/Resultat/Problem.tex}
     
-    \subsection{Hemsidan}
+    \subsection{Hemsidans slutgiltiga upplägg}
         \input{Sections/Resultat/Hemsidan.tex}
-        
     
 \section{Test av problemen}
     
-    \subsection{''Metod''}
+    \subsection{Hur testet genomfördes}
         \input{Sections/Metod/Test.tex}
         
-    \subsection{''Resultat''}
+    \subsection{Vad testet visade}
     \label{sec:slutenkat}
 
-\section{Diskussion}
+\section{Diskussion}% OBS! Glöm ej att göra en ny rubrik för "Lathunden" - diskutera varför vi ej gjorde en lathund utan valde att istället inkludera beskrivningar till varje problem
     \input{Sections/Diskussion/Diskussion.tex}
     
     \subsection{Vad är ett bra problem?}
         \input{Sections/Diskussion/BraProblem.tex}
-        
-    %\subsection{Begreppet problemlösning}
-    %    \input{Sections/Diskussion/Problemlosning.tex}
-    
+
     \subsection{Processen av att ta fram problem samt dess begränsningar}
         \input{Sections/Diskussion/ProcessenAttTaFramProblem.tex}
         
@@ -198,10 +200,19 @@ Involve me and I learn''
     \subsection{Hur vi kan påverka}
         \input{Sections/Diskussion/Paverkan.tex}
 
-\section{Slutsats}
+%\section{Slutsats} %?
 
 \newpage
 \begin{thebibliography}{3}
     \input{Kallor.tex}
 \end{thebibliography}
+
+\newpage
+\pagenumbering{Roman}
+\appendix
+
+\section{Information till lärare}
+
+\section{Den fullständiga versionen av problemen}
+
 \end{document}
