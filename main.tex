@@ -31,11 +31,11 @@
 \usepackage{pdfpages} 
 \usepackage{soul}
 
-\definecolor{lila}{RGB}{128,0,128} % - Ida
-\definecolor{Mahogany}{RGB}{0, 103, 149}%{192, 64, 0} % - Mattias
-\definecolor{turkos}{RGB}{0, 163, 215} % - Björn
-\definecolor{WildStrawberry}{RGB}{255,67,164} % - Axel
-\definecolor{green}{RGB}{25,150,50} % - Påja
+\definecolor{lila}{RGB}{0,0,0}%{128,0,128} % - Ida
+\definecolor{Mahogany}{RGB}{0,0,0}%{0, 103, 149}%{192, 64, 0} % - Mattias
+\definecolor{turkos}{RGB}{0,0,0}%{0, 163, 215} % - Björn
+\definecolor{WildStrawberry}{RGB}{0,0,0}%{255,67,164} % - Axel
+\definecolor{green}{RGB}{0,0,0}%{25,150,50} % - Påja
 
 \begin{document}
 
@@ -81,8 +81,8 @@ Involve me and I learn''
 \newpage
 \pagenumbering{arabic}
 
-\section*{Övrigt material som ska in någonstans i rapporten}
-    \input{Ovrigt.tex}
+%\section*{Övrigt material som ska in någonstans i rapporten}
+    %\input{Ovrigt.tex}
 
 \section{Inledning}
     \input{Sections/Bakgrund/Inledning.tex}
@@ -103,8 +103,9 @@ Involve me and I learn''
         \label{sec:Forandringar}
         \input{Sections/Bakgrund/Forandring.tex}
         
-    \subsection{Matematikundervisningen idag och gapet till högskolan}
+    \subsection{Matematikundervisningen idag och gapet till arbetsliv och högskola}
         \input{Sections/Bakgrund/Matematiken_Idag.tex}
+        \label{sec:matteidag}
         
 %    \subsection{Gruppindelning}
 %        \label{sec:Gruppindelning}
@@ -113,8 +114,8 @@ Involve me and I learn''
 \section{Syfte}
     \input{Sections/Syfte/Mattedelen.tex}
     
-    \subsection{Problembank}
-        \input{Sections/Syfte/Problembank.tex}
+    % \subsection{Problembank} \todo{!}
+    %     \input{Sections/Syfte/Problembank.tex}
     
     \subsection{Webbplatsens roll}
         \input{Sections/Syfte/Webbplats.tex}
@@ -126,7 +127,7 @@ Involve me and I learn''
     \subsection{Vad är problemlösning?}
         \label{sec:problemdef}
         \input{Sections/Teori/Problem.tex}
-        
+    
     \subsection{Polya's fyra steg}
         \label{sec:polya}
         \input{Sections/Teori/Polya.tex}
@@ -142,14 +143,17 @@ Involve me and I learn''
     \subsection{Diskussion och kommunikation inom matematik}
         \input{Sections/Teori/Kommunikation.tex}
         \label{sec:Diskussion}
+    
+    \subsection{Utdrag ur lärobok}
+        \input{Sections/Teori/Utdrag.tex}
         
     \subsection{Verklighetsanknytning i matematiken}
         \label{sec:Verklighetsanknytning}
         \input{Sections/Bakgrund/Verklighetsanknytning.tex}
         
     \subsection{Göra eleverna delaktiga i undervisningen}
-        \input{Sections/Teori/Delaktighet.tex}
         \label{sec:delaktighet}
+        \input{Sections/Teori/Delaktighet.tex}
         
     \subsection{Programmering: Tillämpad problemlösning}
         \label{sec:ProgrammeringOchMatematik}
@@ -193,9 +197,9 @@ Involve me and I learn''
 \section{Test av problemen}
     \label{sec:testavproblemen}
     \input{Sections/Metod/Test-intro.tex}
-\todo{!}
     
     \subsection{Hur testet genomfördes}
+        \label{sec:HurTestetGjordes}
         \input{Sections/Metod/Test.tex}
         
     \subsection{Vad testet visade}
@@ -206,6 +210,7 @@ Involve me and I learn''
     \input{Sections/Diskussion/Diskussion.tex}
 
     \subsection{Reaktioner på resultatet från bakgrundsenkäten}
+        \label{Disk:Bakgrundsenat}
         \input{Sections/Diskussion/Bakgrundsenkat.tex}
     
     \subsection{Tankar bakom framtagandet av problemen}
@@ -220,23 +225,39 @@ Involve me and I learn''
     \subsection{Reflektioner kring testresultaten}
         \input{Sections/Diskussion/Testresultat.tex}
     
-    \subsection{Lathund\todo{Hur ska vi få in detta?}}
-        \input{Sections/Diskussion/Lathund.tex}
+    %\subsection{Alternativa sätt att testa problem}
+        %\input{Sections/Diskussion/AndraSattAttTesta.tex}
     
-    \subsection{Urval för undersökning}
-        \input{Sections/Diskussion/UrvalForUndersokning.tex}
+%    \subsection{Lathund\todo{Hur ska vi få in detta?}}
+%        \input{Sections/Diskussion/Lathund.tex}
+    
+    %\subsection{Urval för undersökning}
+        %\input{Sections/Diskussion/UrvalForUndersokning.tex}
         
     \subsection{Vad är viktigt i matematiken?}
+        \label{sec:VadArViktigt}
         \input{Sections/Diskussion/VadArViktigt}
-        
-    \subsection{Alternativa sätt att testa problem}
-        \input{Sections/Diskussion/AndraSattAttTesta.tex}
         
     \subsection{Hur vi kan påverka}
         \input{Sections/Diskussion/Paverkan.tex}
+    
+%    \subsection{Har detta funnits med förut?}
+%    \textcolor{green}{Metoden för att testa de problem som tagits fram i detta arbete var att låta matematiklärare testa problemen på sina elever, för att sedan ge oss feedback via enkäter, som det går att läsa mer om under \ref{sec:slutenkat}. Tanken med detta var att problemen skulle testas i stor skala på många gymnasieskolor samtidigt. På så sätt samlades det in stora kvantiteter av data på ett enkelt sätt. Dock så hade denna metod några större nackdelar.}
 
-    \subsection{Lagom bäst?}
-        \input{Sections/Diskussion/Lagom.tex}
+%\textcolor{green}{När lärarna testade problemen var tanken att de skulle utgå ifrån uppgifternas beskrivningar, men att de sedan hade relativt fria tyglar att förmedla uppgifterna på det sätt de fann lämpliga. Ett dilemma med denna metod var att det inte fanns någon möjlighet för oss att direkt se hur lärarna genomförde lektionen. Den data vi samlade in via enkäterna gav oss elevernas och lärarnas individuella bedömningar. Eftersom datan samlades in via enkäter blev det svårt att verifiera hur kvalitativ datan var till skillnad från andra metoder som hade kunnat användas.}
+
+%\textcolor{green}{Ett alternativ till att be en lärare att prova uppgifterna på sin klass hade varit att vi själva hade utfört testerna på gymnasielever. En stor skillnad hade varit att vi hade kunnat testa uppgifterna på precis samma sätt med många olika klasser. Datan vi sedan hade samlat in hade varit mer kvalitativ, eftersom vi hade varit konsekventa med tillvägagångssättet vi testade uppgifterna på.}
+%\textcolor{WildStrawberry}{
+     %Om vi tagit en mer aktiv ställning till testandet kunde detta varit möjligt, men i brist på tid gav vi lärarna friheten att testa problemen på det vis de anser bäst själva.} 
+%\textcolor{lila}{Fördelen med vår metod var dock att det bättre speglade hur våra problem är tänkta att användas, det vill säga som en guide för att hjälpa lärare  planera och genomföra lektioner med problemlösning.}
+    
+%\textcolor{green}{Vi hade kunnat delta på lektioner när lärarna genomförde testandet. Detta hade nog varit det mest optimala alternativet då vi hade haft möjlighet att se lärarna arbeta i sin naturliga miljö. Vi hade även kunnat jämföra hur olika lärare testar problemen för att se för- och nackdelar. Detta hade sedan kunnat användas till att bland annat förbättra den övriga informationen som var avsedd till lärarna angående undervisningsmetodiken gällande våra uppgifter. Det svåra hade varit att koordinera detta med lärarna. Det skulle i så fall både passat med deras och våra scheman.}
+    
+%\textcolor{green}{Som det nämndes under \ref{sec:Bakgrundsenkat} så var det via en facebook-sida som vi fick tag i de lärare som testade våra uppgifter. Denna grupp var avsedd för matematiklärare i gymnasiet. Att engagera sig i en facebook-sida för matematiklärare på sin fritid är inte något som kan förväntas av en gymnasielärare. Att dessutom kort innan nationella prov välja att experimentera med nya typer av matematiska problem är än mindre förväntat. Därför är det rimligt att anta att det är lärare som är mer engagerade än den genomsnittliga gymnasieläraren som testade våra problem. Detta kan ha gjort att vårt urval av lärare inte har gett bra spridning i den data vi har fått in. Det blev svårt att veta hur en mindre engagerad lärare hade hanterat en lektion med våra problem.}
+
+
+    %\subsection{Lagom bäst?}
+        %\input{Sections/Diskussion/Lagom.tex}
         %(Väldigt tillfällig titel)
         %Ett avsnitt där vi kan lyfta fram att det finns vissa undersökningar som talar emot PBL, och hur vi ställer oss till det. Att vi inte vill ta bort den gamla matematiken, utan kanske framförallt införa nya sätt att lära sig den på, som ska komplettera de gamla metoderna. Här kan vi även koppla till att många elever ville göra både liknande uppgifter som de vi testade och räkna i boken.
         
